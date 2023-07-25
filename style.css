@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Playfair+Display:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.title{
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(8, 6, 133);
+    letter-spacing: 1px;
+    margin: 20px 0;
+    font-family: 'Playfair', serif;
+    text-shadow: 3px 3px rgb(8, 6, 133,0.5);
+}
+.todo-list{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgb(0, 0, 0,0.1);
+    border-radius: 5px;
+    background-color: rgba(240,240,240,0.5);
+
+}
+
+.list-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.entered-list{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.add-list{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(8, 6, 133);
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+}
+.add-list.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.tasks{
+    width: 100%;
+    margin-top: 30px;
+}
+.items{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgb(0, 0, 0,0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.items p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #111;
+    letter-spacing: 1px;
+
+
+}
+.items.completed p{
+    text-decoration: line-through;
+    color: #11111180;
+}
+
+.items-button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.items-button i{
+    color: rgb(8, 6, 133);
+    font-size: 18px;
+    cursor: pointer;
+}
